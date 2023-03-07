@@ -6,12 +6,11 @@
 # #     A = 2; B = 3 -> 8 
 result = 0
 a = int(input())
-
-def expon(a):
-    b = int(input())
+b = int(input())
+def expon(a,b):
     result = 0
     if b <= 1:
         return a
     result = a ** b
     return result
-print(expon(a))
+print(expon(a, b))
