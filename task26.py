@@ -4,13 +4,12 @@
 
 # # A = 3; B = 5 -> 243 (3⁵)
 # #     A = 2; B = 3 -> 8 
-result = 0
-a = int(input())
-b = int(input())
+
 def expon(a,b):
-    result = 0
     if b <= 1:
         return a
-    result = a ** b
-    return result
+    else:
+        return a * expon(a, b - 1)
+a = int(input())
+b = int(input())
 print(expon(a, b))
