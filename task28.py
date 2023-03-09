@@ -6,14 +6,16 @@
 
 # # 2 2
 # #     4 
-a = int(input())
-b = int(input())
+
 def sum(a,b):
-    count = 0
+    if a == 0:
+        return b
     if b == 0:
         return a
-    while b > count:
-        a += 1
-        count += 1
-    return a
+    elif b > 0:
+        return sum(a + 1, b - 1)
+    elif a > 0:
+        return sum(a - 1, b + 1)
+a = int(input())
+b = int(input())
 print(sum(a,b))
