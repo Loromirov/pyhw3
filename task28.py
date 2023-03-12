@@ -12,10 +12,9 @@ def sum(a,b):
         return b
     if b == 0:
         return a
-    elif b > 0:
-        return sum(a + 1, b - 1)
-    elif a > 0:
-        return sum(a - 1, b + 1)
+    return sum(a + 1, b - 1)
+    # elif a > 0:
+    #     return sum(a - 1, b + 1)
 a = int(input())
 b = int(input())
 print(sum(a,b))
