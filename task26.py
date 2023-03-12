@@ -7,7 +7,8 @@
 
 def expon(a,b):
     if b <= 1:
-        return a
+        return a * b
+    
     else:
         return a * expon(a, b - 1)
 a = int(input())
